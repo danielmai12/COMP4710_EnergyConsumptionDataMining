@@ -5,5 +5,8 @@ import re
 
 
 def runDataSuite():
-    file = 'contracted-embedded-generation-capacity-in-commercial-operation.csv'
-    fileDF = pd.DataFrame
+    file = '2019_final_data_set.csv'
+    fileDF = pd.DataFrame(pd.read_csv(file, low_memory=False))
+
+
+runDataSuite()
